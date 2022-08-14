@@ -8,13 +8,8 @@
 
     nums2 = [...new Set(nums)]
 
-    if(nums2.length < nums.length)
-    {
-        return true
-    }else
-    {
-        return false
-    }
+    return (nums2.length < nums.length) ? true : false
+   
      
 };
 
