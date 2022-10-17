@@ -17,11 +17,7 @@ for(let i = 0 ; i < nums.length ; ++i)
     }
 }
 
-function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
-  }
-
-  return getKeyByValue(obj,1);
+   return Object.keys(obj).find(key => obj[key] === 1);
  
 
 
