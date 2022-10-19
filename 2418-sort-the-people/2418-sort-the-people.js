@@ -5,7 +5,7 @@
  */
  var sortPeople = function(names, heights) {
    
-   obj = {}
+   
 
    arrheights = []
 
