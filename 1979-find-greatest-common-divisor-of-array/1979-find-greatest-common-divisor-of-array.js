@@ -3,14 +3,14 @@
  * @return {number}
  */
 var findGCD = function (nums) {
-    let smallest = Math.min(...nums)
-    let largest = Math.max(...nums)
-
+    
+  
    
 
-   for (let i = smallest ; i > 0 ; --i)
+   for (let i =  Math.min(...nums) ; i > 0 ; --i)
    {
-      if (largest % i === 0 && smallest % i ===0 )
+      if (Math.max(...nums)
+ % i === 0 && Math.min(...nums) % i ===0 )
       {
          return i
       }
