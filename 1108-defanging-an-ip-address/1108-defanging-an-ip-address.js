@@ -3,6 +3,6 @@
  * @return {string}
  */
 var defangIPaddr = function(address) {
-        return address.split("").map(a=> a== "." ? "[.]":a).join("")
+        return address.replaceAll(".","[.]")
 
 };
