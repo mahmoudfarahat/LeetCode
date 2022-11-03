@@ -16,7 +16,7 @@ var numDifferentIntegers = function(word) {
     if(newWord == '')
         {return 0}
 
-newWord =  newWord.split(" ")
+newWord = [...new Set(newWord.split(" "))]
  
  for (let i = 0; i < newWord.length; i++) {
   
