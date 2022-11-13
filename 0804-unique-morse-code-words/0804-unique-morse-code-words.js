@@ -16,10 +16,10 @@ arr =[ ]
 newFormat += marks[alphabet.indexOf(words[i][j])]
  
 ++p
-   if(p ==  words[i].length){
+   if(p ==  words[i].length && !(arr.includes(newFormat))){
     arr.push(newFormat)
    }
   }
  }
-return [...new Set(arr)].length
+return arr.length
 };
