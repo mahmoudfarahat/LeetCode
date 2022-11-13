@@ -10,7 +10,10 @@ var squareIsWhite = function(coordinates) {
   return !(alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 != 0  || alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 == 0 )
   
     
-   
+    
+   return (alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 == 0 ||
+      alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 != 0 
+      )
   
  
    
