@@ -7,22 +7,17 @@ var squareIsWhite = function(coordinates) {
 
  coordinates = coordinates.split("")
 
-   if(alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 != 0 )
+   if(alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 != 0  || alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 == 0 )
    {
       return false
    }
-    if(alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 == 0 )
+    if(alphabet.indexOf(coordinates[0]) % 2 == 0 && coordinates[1] % 2 == 0 ||
+      alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 != 0 
+      )
    {
       return true
    }
-if(alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 == 0 )
-   {
-      return false
-   }
-   if(alphabet.indexOf(coordinates[0]) % 2 != 0 && coordinates[1] % 2 != 0 )
-   {
-      return true
-   }
+ 
    
 };
 
