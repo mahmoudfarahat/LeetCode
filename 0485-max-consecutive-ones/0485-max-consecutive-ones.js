@@ -8,11 +8,11 @@ j =0
 for (let i = 0; i < nums.length; i++) {
  if(nums[i] == 1){
   ++j
-    console.log(nums[i], j)
+   
  }else{
   arr.push(j)
   j = 0
-  console.log(j)
+ 
  }
 }
  if(j){
