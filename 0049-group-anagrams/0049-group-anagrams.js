@@ -4,7 +4,7 @@
  */
 var groupAnagrams = function(strs) {
 
-arr1 =[]
+ 
 newArray = strs.slice();
  
  for (let i = 0; i < strs.length; i++) {
